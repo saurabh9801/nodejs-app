@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:143537498281:task-definition/node-app-task-definition:22",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:143537498281:task-definition/node-app-task-definition:24",
     "containerDefinitions": [
         {
             "name": "nodejs-app",
-            "image": "143537498281.dkr.ecr.us-east-1.amazonaws.com/nodejs-app:latest",
+            "image": "143537498281.dkr.ecr.us-east-1.amazonaws.com/nodejs-app",
             "cpu": 1024,
             "memory": 3072,
             "memoryReservation": 3072,
@@ -27,7 +27,8 @@
                     "awslogs-group": "/ecs/node-app-task-definition",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
-                }
+                },
+                "secretOptions": []
             },
             "resourceRequirements": [
                 {
@@ -41,7 +42,7 @@
     "taskRoleArn": "arn:aws:iam::143537498281:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::143537498281:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 22,
+    "revision": 24,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -89,7 +90,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-09-24T07:39:37.940Z",
+    "registeredAt": "2023-09-24T07:45:27.303Z",
     "registeredBy": "arn:aws:iam::143537498281:root",
     "tags": []
 }
