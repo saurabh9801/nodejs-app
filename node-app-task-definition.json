@@ -1,5 +1,5 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:143537498281:task-definition/node-app-task-definition:17",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:143537498281:task-definition/node-app-task-definition:20",
   "containerDefinitions": [
       {
           "name": "nodejs-app",
